@@ -6,14 +6,22 @@ DareApp::Application.routes.draw do
 	match '/signup',  to: 'users#new'
 	
 	
-	match '/help',    to: 'static_pages#help'
-  match '/about',   to: 'static_pages#about'
-  match '/contact', to: 'static_pages#contact'
+	match '/help',    	to: 'static_pages#help'
+  match '/about',   	to: 'static_pages#about'
+  match '/contact', 	to: 'static_pages#contact'
+  match '/activity', 	to: 'static_pages#activity'
+  match '/webboard', 	to: 'static_pages#webboard'
+  match '/seat', 			to: 'static_pages#seat'
+  
 
   get "static_pages/home"
   get "static_pages/help"
 	get "static_pages/about"
 	get "static_pages/contact"
+	
+	get "static_pages/activity"
+	get "static_pages/webboard"
+	get "static_pages/seat"
 	
   # The priority is based upon order of creation:
   # first created -> highest priority.
